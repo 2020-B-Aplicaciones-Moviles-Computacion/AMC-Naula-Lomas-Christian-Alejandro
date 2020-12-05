@@ -27,19 +27,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KotlinKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="01 - Kotlin" />
       <option name="VM_PARAMETERS" />
@@ -68,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606355823688</updated>
       <workItem from="1606355826653" duration="844000" />
+      <workItem from="1607197383338" duration="56000" />
     </task>
     <servers />
   </component>
@@ -75,6 +66,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1607197410564">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1360.0.1360.728@0.0.1366.728" timestamp="1607197410564" />
     <state width="1323" height="8" key="GridCell.Tab.0.bottom" timestamp="1606357208680">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -91,5 +86,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="8" key="GridCell.Tab.0.right/0.0.1366.728/-1360.0.1360.728@0.0.1366.728" timestamp="1606357208680" />
+    <state x="274" y="0" key="new project wizard" timestamp="1607197438823">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="0" key="new project wizard/0.0.1366.728/-1360.0.1360.728@0.0.1366.728" timestamp="1607197438823" />
   </component>
 </project>
