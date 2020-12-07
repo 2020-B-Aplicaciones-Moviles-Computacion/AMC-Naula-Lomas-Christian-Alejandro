@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name ="mensaje">HOLA LANDSCAPE</string>
+    <color name="colorfondo">#FF0E0C0D</color>
+    <color name="colortexto">#FFE3157C</color>
+</resources>

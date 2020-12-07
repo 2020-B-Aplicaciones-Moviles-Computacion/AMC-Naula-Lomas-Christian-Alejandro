@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name ="mensaje">HOLA PORTRAIT</string>
+    <color name="colorfondo">#FF009688</color>
+    <color name="colortexto">#FF0E0C0D</color>
+</resources>
