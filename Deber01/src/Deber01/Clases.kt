@@ -5,11 +5,10 @@ class Director(var id: Int, var nombre: String, var apellido: String, var nacion
                var edad: Int, var correo: String) {
 
     override fun toString(): String {
-        return "${id}, ${nombre}, ${apellido}, ${nacionalidad}, ${edad}, ${correo})"
+        return "${id}, ${nombre}, ${apellido}, ${nacionalidad}, ${edad}, ${correo}"
     }
 
     fun ingresar(filename: String){
-        val text = File(filename)
         File(filename).appendText("\n${id}, ${nombre}, ${apellido}" +
                 ", ${nacionalidad}, ${edad}, ${correo}")
     }
@@ -64,10 +63,7 @@ class Director(var id: Int, var nombre: String, var apellido: String, var nacion
         println(text)
     }
 
-
 }
-
-
 
 
 class Pelicula (var id: Int, var nombre: String, var genero: String, var duracion: Int,
@@ -78,7 +74,6 @@ class Pelicula (var id: Int, var nombre: String, var genero: String, var duracio
     }
 
     fun ingresar(filename: String){
-        val text = File(filename)
         File(filename).appendText("\n${id}, ${nombre}, ${genero}" +
                 ", ${duracion}, ${año}, ${director}")
     }
