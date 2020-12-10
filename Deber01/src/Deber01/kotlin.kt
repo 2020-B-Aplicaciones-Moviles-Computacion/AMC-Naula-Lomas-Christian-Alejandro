@@ -2,7 +2,6 @@ import java.io.File
 import java.util.*
 
 fun main() {
-    //val fileNameDirectores: String = "C:/Christian/Universidad/7mo_Semestre/Aplicaciones_Móviles/Repositorio/AMC-Naula-Lomas-Christian-Alejandro/Deber01/src/Deber01/Directores.txt"
     val fileNameDirectores: String =
         "C:/Christian/Universidad/7mo_Semestre/Aplicaciones_Moviles/Repositorio/AMC-Naula-Lomas-Christian-Alejandro/Deber01/src/Deber01/Directores.txt"
     val fileNamePeliculas: String =
@@ -95,7 +94,9 @@ fun main() {
                     if (n1.toLowerCase().equals("y")) {
                         eliminarDirector(director, fileNameDirectores)
                         println("Director eliminado correctamente\n")
-                    } else break
+                    } else{
+                        println("Operación Cancelada\n")
+                    }
                     //actualizarDirector(n1, fileNameDirectores, idDirector[0])
                 } else println("No existe un director asociado con ese número\n")
             }
@@ -188,6 +189,9 @@ fun main() {
                         println("Película eliminada correctamente\n")
                     }
                 }
+                else{
+                    println("Operación Cancelada\n")
+                }
             }
 
             else -> {
@@ -221,7 +225,6 @@ fun desplegarDirectores(filename: String) {
             director[4].toInt(), director[5]
         ).toString()
         println(directorAux)
-
         i++
     }
 }
@@ -274,7 +277,6 @@ fun eliminarDirector(input: String, filename: String) {
 // Consultamos el id correspondiente
 fun consultarIdDirector(filename: String): Int {
     val lines: List<String> = File(filename).readLines()
-    var i: Int = 0
     var idDirector = tokenizer(lines[(lines.size - 1)])
     return (idDirector[0].toInt() + 1)
 }
@@ -310,7 +312,7 @@ fun desplegarPeliculasbyDirector(filenamePeliculas: String, filenameDirectores: 
             var director = tokenizer(busquedaDirectoresbyId(filenameDirectores, pelicula[5]))
             println(peliculaAux.toString() + "${director[1]} ${director[2]}")
         }
-            i++
+        i++
     }
 }
 
@@ -345,7 +347,6 @@ fun eliminarPelicula(input: String, filename: String) {
 fun busquedPeliculabyId(filename: String, id: String): String {
     val lines: List<String> = File(filename).readLines()
     var i: Int = 0
-
     while (i < lines.size) {
         var pelicula = tokenizer(lines[i])
         if (pelicula[0].equals(id)) {

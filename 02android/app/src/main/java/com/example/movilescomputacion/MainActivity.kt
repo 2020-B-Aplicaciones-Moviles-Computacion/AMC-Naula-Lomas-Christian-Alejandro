@@ -3,9 +3,11 @@ package com.example.movilescomputacion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,29 +26,68 @@ class MainActivity : AppCompatActivity() {
 
         val buttonIntentExplicitoParameters = findViewById<Button>(R.id.btn_ir_intent_explicito_parametros)
         buttonIntentExplicitoParameters.setOnClickListener {
-            val parametros = arrayListOf<ArrayList<*>>(
-                arrayListOf("nombre", "Christian"),
-                arrayListOf("apeliido", "Naula"),
-                arrayListOf("edad", "22")
+
+            val intentExplicito = Intent(
+                this,
+                CIntentExplicitoParametros::class.java
+            )
+            intentExplicito.putExtra("nombre", "christian")
+            intentExplicito.putExtra("apellido", "naula")
+            intentExplicito.putExtra("edad", 31)
+            Log.i("intent-explicito", "${intentExplicito.extras}")
+            startActivityForResult(intentExplicito, 102)
+
+            /*val parametros = arrayListOf<Pair<String, *>>(
+                Pair("nombre", "Christian"),
+                Pair("apellido", "Naula"),
+                Pair("edad", "22")
             )
             //irListView()
-            irActividad(CIntentExplicitoParametros::class.java)
+            irActividad(CIntentExplicitoParametros::class.java, parametros)*/
         }
     }
 
     fun irActividad(
         clase: Class<*>,
-        parametros: ArrayList<ArrayList<*>>?
+        parametros: ArrayList<Pair<String, *>>? = null
     ){
         val intentExplicito = Intent(
             this,
             clase
         )
-        intentExplicito.putExtra("nombre", "Christian")
-        intentExplicito.putExtra("apellido", "Naula")
-        intentExplicito.putExtra("edad", "22")
+        Log.i("intent-explicito", "${parametros}")
+        if (parametros != null){
+            parametros.forEach{
+                val nombreVariable = it.first
+                val valorVariable = it.second is Any
+                intentExplicito.putExtra(nombreVariable, valorVariable)
+            }
+        }
         startActivity(intentExplicito)
     }
+
+
+    override fun onActivityResult(
+        requestCode: Int, //codigo de peticion - Codigo: 102
+        resultCode: Int,  //codigo de reusltado - RESULT_OK o RESULT CANCELED
+        data: Intent? // Datos opcionados Ej: nombre = Vicente y edad = 30
+    ) {
+        super.onActivityResult(requestCode, resultCode, data)
+        when (requestCode) {
+            102 -> {
+                if(resultCode == RESULT_OK){
+                    Log.i("intent-explicito", "Si actualizó los datos")
+                    if (data != null) {
+                        val nombre = data.getStringExtra("nombre")
+                        val edad = data.getIntExtra("edad", 0)
+                        Log.i("intent-explicito", "Nombre: ${nombre} Edad: ${edad}")
+                    }
+                }else{
+                    Log.i("intent-explicito", "Usario no lleno los datos")
+                }
+            }
+        }
+    }
+
 }
 
-//btn_ir_intent_explicito_parametros

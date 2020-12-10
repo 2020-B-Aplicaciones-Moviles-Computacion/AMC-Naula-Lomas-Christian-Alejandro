@@ -1,3 +1,6 @@
-1, Advengers, accion, 120, 2010, 2
-2, El día despues de mañana, Drama, 125, 1995, 4
-3, Avatar, Acción, 140, 2011, 5
+1, Tiburón, suspenso, 130, 1975, 1
+2, El origen, Ciencia ficción, 162, 2010, 4
+3, Rescatando al soldado Ryan, Acción, 170, 1998, 1
+5, El lobo de Wall Street, Drama, 180, 2013, 5
+6, La ciudad del pecado, Acción, 147, 2005, 2
+7, Bastardos sin gloria, Bélico, 153, 2009, 2
