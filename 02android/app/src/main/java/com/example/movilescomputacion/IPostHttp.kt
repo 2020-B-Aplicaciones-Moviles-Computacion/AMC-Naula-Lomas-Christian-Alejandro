@@ -1,10 +1,10 @@
 package com.example.movilescomputacion
 
 class IPostHttp (
-    val id: Int,
-    var userId: Any,
-    val title: String,
-    val body: String){
+    val id: Int?,
+    var userId: Any?,
+    val title: String?,
+    var body: String?){
 
     //var userIdTransformado: Int = 0;
     init {
