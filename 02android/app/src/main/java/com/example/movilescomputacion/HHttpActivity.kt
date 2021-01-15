@@ -13,14 +13,11 @@ class HHttpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_h_http)
 
-        //val id:String = "3"
-        //Log.i("http-klaxon", "Error ${error}")
-
-        metodoGet()
+       // metodoGet()
         //metodoPost()
-        //metodoUpdate(1)
+        //(1)
         //metodoDelete(1)
-        //metodoBusquedaID(3)
+        metodoBusquedaID(2)
 
     }
 
@@ -102,8 +99,8 @@ class HHttpActivity : AppCompatActivity() {
 
     fun metodoUpdate(id:Int) {
         val parametros: List<Pair<String, String>> = listOf(
-            "title" to "Titulo moviles version 2",
-            "body" to "descripcion moviles version 2",
+            "title" to "Titulo moviles version actualizada",
+            "body" to "descripcion moviles version actualizada",
             "userId" to "1"
         )
         "https://jsonplaceholder.typicode.com/posts/${id}"
@@ -115,8 +112,6 @@ class HHttpActivity : AppCompatActivity() {
                         Log.i("http-klaxon", "Error ${error}")
                     }
                     is Result.Success -> {
-                        /*val usuarioString = result.get()
-                        Log.i("http-klaxon", "${usuarioString}")*/
                         val postString = result.get()
                         Log.i("http-klaxon", "Recurso Actualizado:${postString}")
                         val posts = Klaxon()
@@ -129,13 +124,8 @@ class HHttpActivity : AppCompatActivity() {
 
 
     fun metodoDelete(id:Int) {
-        val parametros: List<Pair<String, String>> = listOf(
-            "title" to "Titulo moviles",
-            "body" to "descripcion moviles",
-            "userId" to "1"
-        )
         "https://jsonplaceholder.typicode.com/posts/${id}"
-            .httpDelete(parametros)
+            .httpDelete()
             .responseString { req, res, result ->
                 when (result) {
                     is Result.Failure -> {
@@ -156,11 +146,6 @@ class HHttpActivity : AppCompatActivity() {
 
 
     fun metodoBusquedaID(userId:Int) {
-        val parametros: List<Pair<String, String>> = listOf(
-            "title" to "Titulo moviles",
-            "body" to "descripcion moviles",
-            "userId" to "1"
-        )
         "https://jsonplaceholder.typicode.com/posts?userId=${userId}"
             .httpGet()
             .responseString{ req, res, result ->
@@ -176,7 +161,7 @@ class HHttpActivity : AppCompatActivity() {
                             .parseArray<IPostHttp>(postString)
                         if (arregloPosts != null) {
                             arregloPosts.forEach {
-                                Log.i("http-klaxon", "${it.title}")
+                                Log.i("http-klaxon", "Titulo del recuro con id ${it.id}: ${it.title}")
                             }
                         }
                     }

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Peliculas.editar_pelicula">
+
+    <EditText
+        android:id="@+id/etxt_Editgenero_Pelicula"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/duracion"
+        android:textAlignment="inherit"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/año"
+        android:textAlignment="inherit"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/txt_EditPelicula"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:text="@string/editar_pelicula"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:text="@string/nombre"
+        android:textAlignment="inherit"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <EditText
+        android:id="@+id/etxt_Editduracion"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etxt_EditAno"
+        android:layout_width="204sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/genero"
+        android:textAlignment="inherit"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/etxt_EditnombrePelicula"
+        android:layout_width="201dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_AceptarEditPeli"
+        android:layout_width="149dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/btnAceptar"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_CancelarEditPeli"
+        app:layout_constraintStart_toEndOf="@+id/btn_CancelarEditPeli"
+        app:layout_constraintTop_toTopOf="@+id/btn_CancelarEditPeli"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_CancelarEditPeli"
+        android:layout_width="149dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="524dp"
+        android:text="@string/btnCancelar"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_EditPelicula"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="@+id/txt_EditPelicula"
+        app:layout_constraintTop_toBottomOf="@+id/txt_EditPelicula" />
+
+    <TextView
+        android:id="@+id/txtinfo_IdPelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/pelicula"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_EditPelicula"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="@+id/txt_EditPelicula"
+        app:layout_constraintTop_toBottomOf="@+id/txt_EditPelicula" />
+
+
+    <TextView
+        android:id="@+id/txt_IdEditPeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtinfo_IdPelicula"
+        app:layout_constraintStart_toEndOf="@+id/txtinfo_IdPelicula"
+        app:layout_constraintTop_toTopOf="@+id/txtinfo_IdPelicula"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

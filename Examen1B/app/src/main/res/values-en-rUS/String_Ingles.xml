@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exam-1B</string>
+    <string name="boton_crear_directores">CREATE</string>>
+
+    //MenuItems
+    <string name="informacion">More Information</string>
+    <string name="Editar">Update</string>
+    <string name="Eliminar">Delete</string>
+    <string name="lista_Peliculas">List of Movies</string>
+
+    //Botones
+    <string name="btnAceptar">ACCEPT</string>
+    <string name="btnCancelar">CANCEL</string>
+    <string name="btnRegresar">RETURN</string>
+
+    //TextViews director
+    <string name="nombre">Name:</string>
+    <string name="apellido">Last name:</string>
+    <string name="nacionalidad">Country:</string>
+    <string name="Edad">Age:</string>
+    <string name="correo">Email:</string>
+    //Titulos Director
+    <string name="directores">DIRECTORS</string>
+    <string name="nuevo_directores">NEW DIRECTOR</string>
+    <string name="editar_directores">EDIT DIRECTOR</string>
+    <string name="info_directores">DIRECTOR INFORMATION</string>
+
+
+
+    //TextViews peliculas
+    <string name="genero">Genre:</string>
+    <string name="duracion">Duration:</string>
+    <string name="año">Year:</string>
+    //Titulos Pelicula
+    <string name="peliculas">MOVIES</string>
+    <string name="pelicula">Movie ID:</string>
+    <string name="nueva_pelicula">NEW MOVIE</string>
+    <string name="editar_pelicula">EDIT MOVIE</string>
+    <string name="info_pelicula">MOVIE INFORMATION</string>
+
+</resources>
