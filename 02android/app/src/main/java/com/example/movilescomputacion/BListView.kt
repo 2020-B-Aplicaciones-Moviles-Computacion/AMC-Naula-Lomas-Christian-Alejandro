@@ -122,3 +122,6 @@ class BListView : AppCompatActivity() {
         }
     }
 }
+
+/*val campoTexto = findViewById<View>(R.id.campo_texto) as EditText
+        Log.d("Valor ET", campoTexto.text.toString())*/

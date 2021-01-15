@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemInfo"
+        android:title="@string/informacion" />
+    <item
+        android:id="@+id/itemVerPeliculas"
+        android:title="@string/lista_Peliculas" />
+    <item
+        android:id="@+id/itemEditar"
+        android:title="@string/Editar" />
+    <item
+        android:id="@+id/itemEliminar"
+        android:title="@string/Eliminar" />
+</menu>

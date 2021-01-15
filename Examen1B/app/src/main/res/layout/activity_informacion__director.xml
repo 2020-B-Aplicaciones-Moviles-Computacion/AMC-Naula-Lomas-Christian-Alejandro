@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Informacion_Director">
+
+    <TextView
+        android:id="@+id/txtinfo_IdDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="ID Director:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_InfoDirectores"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_InfoDirectores"
+        app:layout_constraintTop_toBottomOf="@+id/txt_InfoDirectores" />
+
+    <TextView
+        android:id="@+id/txtinfo_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtinfo_IdDirector"
+        app:layout_constraintStart_toEndOf="@+id/txtinfo_IdDirector"
+        app:layout_constraintTop_toTopOf="@+id/txtinfo_IdDirector"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_InfoDirectores"
+        android:layout_width="313dp"
+        android:layout_height="59dp"
+        android:includeFontPadding="false"
+        android:text="@string/info_directores"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <EditText
+        android:id="@+id/txtinfo_Nombre"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:enabled="false"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <EditText
+        android:id="@+id/txtinfo_Apellido"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:hint="@string/apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtinfo_Nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtinfo_Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfo_Nombre" />
+
+    <EditText
+        android:id="@+id/txtinfo_Nacionalidad"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:hint="@string/nacionalidad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtinfo_Apellido"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtinfo_Apellido"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfo_Apellido" />
+
+    <EditText
+        android:id="@+id/txtinfo_edad"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/Edad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtinfo_Nacionalidad"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/txtinfo_Nacionalidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfo_Nacionalidad" />
+
+    <EditText
+        android:id="@+id/txtinfo_correo"
+        android:layout_width="375sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/txtinfo_edad"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/txtinfo_edad"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfo_edad" />
+
+    <Button
+        android:id="@+id/btninfo_aceptar"
+        android:layout_width="149dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="460dp"
+        android:text="@string/btnAceptar"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_InfoDirectores"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="@+id/txt_InfoDirectores"
+        app:layout_constraintTop_toBottomOf="@+id/txt_InfoDirectores" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
