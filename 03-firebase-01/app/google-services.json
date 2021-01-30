@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "487366907317",
+    "project_id": "moviles-2020b-computacion-canl",
+    "storage_bucket": "moviles-2020b-computacion-canl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487366907317:android:0ee0eaeaa13a1a510af5fc",
+        "android_client_info": {
+          "package_name": "com.example.firebase_ejemplo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487366907317-9dnceantcibv6efj6m0r2vafktn75anu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1PERgayao_zPzOraOpFtRRj6q0CyRVas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487366907317-9dnceantcibv6efj6m0r2vafktn75anu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
