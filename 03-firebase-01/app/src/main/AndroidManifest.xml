@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.firebase_ejemplo">
+    package="com.example.firebase_ejemplo"
+    >
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -9,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FIrebase_Ejemplo">
-        <activity android:name=".COrdenes"></activity>
+
+        <activity android:name=".Intento_Imagenes"></activity>
+        <activity android:name=".ListadoOrdenes" />
+        <activity android:name=".COrdenes" />
         <activity android:name=".CProducto" />
         <activity android:name=".CRestaurante" />
         <activity android:name=".BFirestore" />
