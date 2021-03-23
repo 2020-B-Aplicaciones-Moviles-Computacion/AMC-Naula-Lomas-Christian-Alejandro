@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pp_fondo"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="414dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="588dp"
+        android:background="#323131"
+        android:foregroundTint="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="71dp"
+            android:layout_height="73dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cancion1" />
+
+        <TextView
+            android:id="@+id/tv_nombreCancion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Con lo puesto"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+            app:layout_constraintStart_toEndOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@+id/imageView13"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <TextView
+            android:id="@+id/tv_artista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="MXRGXN, Sharif"
+            android:textColor="#CBC7C7"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nombreCancion"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_nombreCancion"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombreCancion" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="28dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+            app:layout_constraintEnd_toStartOf="@+id/imageView21"
+            app:layout_constraintTop_toTopOf="@+id/imageView21"
+            app:srcCompat="@drawable/ic_ordenador" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="28dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintEnd_toStartOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/imageView19"
+            app:srcCompat="@drawable/ic_favorito" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_pausa" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="405dp"
+        android:layout_height="611dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_compilado1"
+                android:layout_width="175dp"
+                android:layout_height="63dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:drawableLeft="@mipmap/ic_launcher_portada2_round"
+                android:drawablePadding="0dp"
+                android:includeFontPadding="true"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="0dp"
+                android:text="Lista 2"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                app:backgroundTint="#555454"
+                app:iconPadding="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bt_compilado"
+                app:layout_constraintStart_toEndOf="@+id/bt_compilado"
+                app:layout_constraintTop_toTopOf="@+id/bt_compilado"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/bt_compilado3"
+                android:layout_width="175dp"
+                android:layout_height="63dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:drawableLeft="@mipmap/ic_launcher_portada4_round"
+                android:drawablePadding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingLeft="0dp"
+                android:text="Lista 4"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                app:backgroundTint="#555454"
+                app:layout_constraintBottom_toBottomOf="@+id/bt_compilado2"
+                app:layout_constraintStart_toEndOf="@+id/bt_compilado2"
+                app:layout_constraintTop_toTopOf="@+id/bt_compilado2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/bt_compilado"
+                android:layout_width="175dp"
+                android:layout_height="63dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingLeft="0dp"
+                android:text="Lista 1"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                app:backgroundTint="#555454"
+                app:iconPadding="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/bt_compilado2"
+                android:layout_width="175dp"
+                android:layout_height="63dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:drawableLeft="@mipmap/ic_launcher_portada3_round"
+                android:drawablePadding="8dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingLeft="0dp"
+                android:text="Lista 3"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                app:backgroundTint="#555454"
+                app:iconPadding="0dp"
+                app:layout_constraintStart_toStartOf="@+id/bt_compilado"
+                app:layout_constraintTop_toBottomOf="@+id/bt_compilado" />
+
+            <ImageView
+                android:id="@+id/iv_ajustes"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="208dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:srcCompat="@drawable/ic_configuraciones" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buenos Días"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.006" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="Escuchado recientemente"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_compilado2" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="216dp"
+                android:text="Los programas que más escuchas"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_compilado2" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Los programas que más escuchas"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+            <HorizontalScrollView
+                android:layout_width="401dp"
+                android:layout_height="153dp"
+                android:layout_marginTop="252dp"
+                android:clipToPadding="false"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:scrollbarSize="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginTop="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:scrollbarSize="1dp">
+
+                    <Button
+                        android:id="@+id/bt_compilado8"
+                        android:layout_width="138dp"
+                        android:layout_height="115dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_weight="1"
+                        android:background="@color/design_default_color_background"
+                        android:drawableTop="@mipmap/ic_launcher_round"
+                        android:drawablePadding="0dp"
+                        android:drawingCacheQuality="auto"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:scrollbarSize="1dp"
+                        android:text="Lista 1"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp"
+                        app:backgroundTint="#555454"
+                        app:iconPadding="0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <Button
+                        android:id="@+id/bt_compilado9"
+                        android:layout_width="138dp"
+                        android:layout_height="119dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher_portada2_round"
+                        android:drawablePadding="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:scrollbarSize="1dp"
+                        android:text="Lista 1"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp"
+                        app:backgroundTint="#555454"
+                        app:iconPadding="0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <Button
+                        android:id="@+id/bt_compilado10"
+                        android:layout_width="138dp"
+                        android:layout_height="119dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher_portada3"
+                        android:drawablePadding="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:scrollbarSize="1dp"
+                        android:text="Lista 1"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp"
+                        app:backgroundTint="#555454"
+                        app:iconPadding="0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <Button
+                        android:id="@+id/bt_compilado11"
+                        android:layout_width="138dp"
+                        android:layout_height="119dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher_portada4"
+                        android:drawablePadding="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:scrollbarSize="1dp"
+                        android:text="Lista 1"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp"
+                        app:backgroundTint="#555454"
+                        app:iconPadding="0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="412dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="460dp"
+                android:clipToPadding="false"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:scrollbarSize="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginTop="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:scrollbarSize="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            app:srcCompat="@drawable/portada5" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="La Cotorrisa"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Programa * La Cotorrisa"
+                            android:textAlignment="center"
+                            android:textColor="#A5A1A1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            app:srcCompat="@drawable/portada6" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Relatos de Terror"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="178dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:text="Programa * Relatos de Terror"
+                            android:textAlignment="center"
+                            android:textColor="#A5A1A1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            app:srcCompat="@drawable/portada7" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="The Wild Project"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:text="Programa * The Wild Project"
+                            android:textAlignment="center"
+                            android:textColor="#A5A1A1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            app:srcCompat="@drawable/portada8" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="The Chernobyl Podcast"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:text="Programa * The Chernobyl Podcast"
+                            android:textAlignment="center"
+                            android:textColor="#A5A1A1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="412dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="725dp"
+                android:clipToPadding="false"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:scrollbarSize="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginTop="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:scrollbarSize="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            app:srcCompat="@drawable/artista1" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Sharif"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            app:srcCompat="@drawable/artista2" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Moses Concas"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            app:srcCompat="@drawable/artista3" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Cianfue"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            app:srcCompat="@drawable/artista4" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Salomón Beda"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout01"
+        android:layout_width="415dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="688dp"
+        android:background="#121111"
+        android:backgroundTint="#131313"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_biblioteca"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="72dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_buscar"
+            app:layout_constraintStart_toEndOf="@+id/iv_buscar"
+            app:layout_constraintTop_toTopOf="@+id/iv_buscar"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_bilbioteca" />
+
+        <ImageView
+            android:id="@+id/iv_buscar"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="72dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_inicio"
+            app:layout_constraintStart_toEndOf="@+id/iv_inicio"
+            app:layout_constraintTop_toTopOf="@+id/iv_inicio"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_buscar_color" />
+
+        <ImageView
+            android:id="@+id/iv_inicio"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.266"
+            app:srcCompat="@drawable/ic_inicio" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

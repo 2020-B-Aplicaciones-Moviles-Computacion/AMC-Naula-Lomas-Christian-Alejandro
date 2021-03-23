@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pp_fondo"
+    tools:context=".Biblioteca">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Música"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_listado"
+        android:layout_width="318dp"
+        android:layout_height="574dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout01"
+        android:layout_width="415dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="688dp"
+        android:background="#121111"
+        android:backgroundTint="#131313"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_biblioteca"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="72dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_buscar"
+            app:layout_constraintStart_toEndOf="@+id/iv_buscar"
+            app:layout_constraintTop_toTopOf="@+id/iv_buscar"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_bilbioteca_color" />
+
+        <ImageView
+            android:id="@+id/iv_buscar"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="72dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_inicio"
+            app:layout_constraintStart_toEndOf="@+id/iv_inicio"
+            app:layout_constraintTop_toTopOf="@+id/iv_inicio"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_buscar_color" />
+
+        <ImageView
+            android:id="@+id/iv_inicio"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.266"
+            app:srcCompat="@drawable/ic_inicio_color" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
