@@ -52,7 +52,16 @@ class MainActivity : AppCompatActivity() {
         val botonFirestore = findViewById<Button>(R.id.btn_firestore)
         botonFirestore.setOnClickListener { irActividad(BFirestore::class.java) }
 
-//christian.alejandro98@hotmail.com
+        val mapa = findViewById<Button>(R.id.btn_mapa)
+            .setOnClickListener {
+                irActividad(ContenedorMapa::class.java)
+            }
+
+        val fragmento = findViewById<Button>(R.id.btn_ir_fragmento)
+            .setOnClickListener {
+                irActividad(EFragmento::class.java)
+            }
+
     }
 
     fun solicitarIngresarAplicativo(){

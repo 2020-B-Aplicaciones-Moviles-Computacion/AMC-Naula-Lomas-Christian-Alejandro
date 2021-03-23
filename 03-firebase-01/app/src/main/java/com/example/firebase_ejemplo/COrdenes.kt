@@ -9,6 +9,7 @@ import com.example.firebase_ejemplo.dto.FirestoreRestauranteDto
 import com.example.firebase_ejemplo.dto.FirestoreUsuarioDto
 import com.example.firebase_ejemplo.dto.FirestoreUsuarioOrdenDto
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.QueryDocumentSnapshot
 import com.google.firebase.firestore.ktx.firestore
@@ -50,9 +51,74 @@ class COrdenes : AppCompatActivity() {
                 .setOnClickListener {
                     crearOrden()
                 }
+        //eliminacion()
+        eliminarDocumentoMedianteConsulta("orden", "review")
+        //buscarOrdenes()
 
-        buscarOrdenes()
+    }
 
+    fun eliminacion(){
+        val db = Firebase.firestore;
+        val docREf = db
+                .collection("cities")
+                .document("BJ")
+                .collection("landmarks")
+                .document("6dfp4ud33yiQ2dQwniZ2")
+
+        val eliminarcampo = hashMapOf<String, Any>(
+                "name" to FieldValue.delete()
+        )
+
+        /*docREf
+                .update(eliminarcampo)
+                .addOnSuccessListener {
+                    Log.i("firebase-delete","${it}")
+                }
+                .addOnFailureListener{
+                    Log.i("firebase-delete","Error eliminando campo")
+                }*/
+
+        docREf
+                .delete()
+                .addOnSuccessListener {
+                    Log.i("firebase-delete","${it}")
+                }
+                .addOnFailureListener{
+                    Log.i("firebase-delete","Error eliminando campo")
+                }
+    }
+
+    fun eliminarDocumentoMedianteConsulta(coleccion:String, campo:String){
+        // Buscar -> ordenes por review >= 3 y eliminarlas
+        val db = Firebase.firestore
+        val referencia = db.collection(coleccion)
+
+        referencia
+                .whereGreaterThanOrEqualTo(campo, 3)
+                .get()
+                .addOnSuccessListener {
+                    for (document in it){
+                        //Log.i("firebase-review", "documentox: ${document.id} => ${document.data}")
+                        //Log.i("firebase-review", "documentox: ${document.data.get("review")}")
+                        Log.i("firebase-review", "documentox: ${document.id}")
+                        val referencia = db
+                                .collection(coleccion)
+                                .document(document.id)
+                                .delete()
+                                .addOnSuccessListener {
+                                    Log.i("firebase-review","${it}")
+                                }
+                                .addOnFailureListener{
+                                    Log.i("firebase-review","Error eliminando campo")
+                                }
+                    }
+                }
+                .addOnFailureListener{
+                    Log.i("firebase-review","Error eliminando campo")
+                }
+
+
+        //referencia
     }
 
     fun buscarOrdenes(){
@@ -185,6 +251,8 @@ class COrdenes : AppCompatActivity() {
                 }
 
     }
+
+
 
     fun cargarRestaurantes(){
         val spinnerRestaurantes = findViewById<Spinner>(R.id.sp_restaurantes)
